@@ -21,21 +21,13 @@ namespace HotelManagementSystem.Views
     /// </summary>
     public partial class Dashboard : Window
     {
-        private ObservableCollection<DboUser> usersList;
+        
         public Dashboard()
         {
             InitializeComponent();
-            LoadUsers();
+           
         }
-        private void LoadUsers()
-        {
-            using (var context = new HotelDbContext())
-            {
-                var usersFromDb = context.DboUsers.ToList();
-                usersList = new ObservableCollection<DboUser>(usersFromDb);
-                membersDataGrid.ItemsSource = usersList;
-            }
-        }
+        
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {

@@ -4,22 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:local="clr-namespace:HotelManagementSystem.Views"
+        xmlns:views="clr-namespace:HotelManagementSystem.Views"
         mc:Ignorable="d"
         Title="Dashboard" Height="720" Width="1080" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
-    <Window.Resources>
-        <BooleanToVisibilityConverter x:Key="BoolToVis"></BooleanToVisibilityConverter>
-    </Window.Resources>
 
-
-        <Grid>
-        <Border Background="#eff2f7" CornerRadius="30" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown" Margin="-3,0,3,0">
+    <Grid>
+        <Border Background="#eff2f7" CornerRadius="30" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown" Margin="0,0,3,0">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="200"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                
+
                 <!--Left menu-->
                 <Grid>
                     <Grid.RowDefinitions>
@@ -51,36 +47,33 @@
                             <StackPanel DockPanel.Dock="Top" Cursor="">
                                 <Button x:Name="btnHabitaciones"
                                         Background="Transparent"
-                                        Foreground="#d0c0ff"
                                         FocusVisualStyle="{x:Null}"
                                         FontSize="13"
-                                        Margin="15 10"
+                                        Margin="10 10"
                                         Height="35" Style="{StaticResource btnLateral}">
                                     <!-- Contenido del botón -->
-                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                    <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
                                         <materialDesign:PackIcon Kind="Hotel" Width="25" Height="25" VerticalAlignment="Center" Margin="20 2 10 0" />
-                                        <TextBlock Text="Habitaciones" FontSize="18" Margin="1 0"/>
+                                        <TextBlock Text="Habitaciones" FontSize="18" Margin="1 0"   />
                                     </StackPanel>
                                 </Button>
                                 <Button x:Name="btnReservaciones"
                                         Background="Transparent"
-                                        Foreground="#d0c0ff"
                                         FocusVisualStyle="{x:Null}"
                                         FontSize="13"
                                         Margin="15 10"
                                         Height="35" Style="{StaticResource btnLateral}">
                                     <!-- Contenido del botón -->
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
-                                        <materialDesign:PackIcon Kind="RoomService" Width="25" Height="25" VerticalAlignment="Center" Margin="20 2 10 0" />
-                                        <TextBlock Text="Reservaciones" FontSize="18" Margin="1 0"/>
+                                        <materialDesign:PackIcon Kind="RoomService" Width="25" Height="25" VerticalAlignment="Center" Margin="20 2 10 0" Foreground="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}" />
+                                        <TextBlock Text="Reservas" FontSize="18" Margin="1 0" Foreground="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"/>
                                     </StackPanel>
                                 </Button>
                                 <Button x:Name="btnClientes"
                                         Background="Transparent"
-                                        Foreground="#d0c0ff"
                                         FocusVisualStyle="{x:Null}"
                                         FontSize="13"
-                                        Margin="15 10"
+                                        Margin="10 10"
                                         Height="35" Style="{StaticResource btnLateral}">
                                     <!-- Contenido del botón -->
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
@@ -90,12 +83,11 @@
                                 </Button>
                                 <Button x:Name="btnCheckout"
                                         Background="Transparent"
-                                        Foreground="#d0c0ff"
                                         FocusVisualStyle="{x:Null}"
                                         FontSize="13"
-                                        Margin="15 10"
+                                        Margin="10 10"
                                         Height="35" Style="{StaticResource btnLateral}">
-                                   
+
                                     <!-- Contenido del botón -->
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
                                         <materialDesign:PackIcon Kind="Hail" Width="25" Height="25" VerticalAlignment="Center" Margin="20 2 10 0"/>
@@ -104,12 +96,11 @@
                                 </Button>
                                 <Button x:Name="btnEmpleados"
                                         Background="Transparent"
-                                        Foreground="#d0c0ff"
                                         FocusVisualStyle="{x:Null}"
                                         FontSize="13"
-                                        Margin="15 10"
+                                        Margin="10 10"
                                         Height="35" Style="{StaticResource btnLateral}">
-                                
+
                                     <!-- Contenido del botón -->
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
                                         <materialDesign:PackIcon Kind="Work" Width="25" Height="25" VerticalAlignment="Center" Margin="20 2 10 0"/>
@@ -118,366 +109,56 @@
                                 </Button>
                             </StackPanel>
 
-                            <Button Background="Transparent" VerticalAlignment="Bottom" HorizontalAlignment="Left" BorderBrush="Transparent" Margin="15 0 15 20 " Style="{StaticResource btnLateral}">
-                                <StackPanel Orientation="Horizontal">
-                                    <materialDesign:PackIcon Kind="Logout" Width="25" Height="25" VerticalAlignment="Center"  Foreground="#d0c0ff" />
-                                    <TextBlock Text="Cerrar Sesión" Foreground="#d0c0ff" FontWeight="Normal" FontSize="18" />
+                            <Button 
+                                Background="Transparent"
+                                FocusVisualStyle="{x:Null}"
+                                FontSize="13"
+                                Margin="10 10"
+                                Height="35" Style="{StaticResource btnLateral}">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                    <materialDesign:PackIcon Kind="Logout" Width="25" Height="25" Foreground="#d0c0ff" VerticalAlignment="Center" Margin="20 2 10 0"/>
+                                    <TextBlock Text="Cerrar Sesión" Foreground="#d0c0ff" FontWeight="Normal" FontSize="18" Margin="1 0"/>
                                 </StackPanel>
                             </Button>
                         </DockPanel>
                     </Border>
                 </Grid>
 
-                <!--Main Section-->
+                <!--Main Content-->
                 <Grid Grid.Column="1" Margin="30 20 20 20">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="auto"/>
-                    </Grid.RowDefinitions>
-                    
-                    <!--Search Textbox-->
-                    <Grid Width="300" HorizontalAlignment="Left">
-                        <TextBlock Margin="20 0" VerticalAlignment="Center" Foreground="#b0b9c6" IsHitTestVisible="False"
-                                   Panel.ZIndex="1" Text="Buscar..." Padding="15 10" Visibility="{Binding ElementName=txtSearch, Path=Text.IsEmpty,Converter={StaticResource BoolToVis}}"></TextBlock>
+                    <views:Habitaciones></views:Habitaciones>
+                </Grid>
 
-                        <TextBox x:Name="txtSearch" Background="#ffffff" Foreground="#b0b9c6" BorderThickness="0" FontSize="15" Padding="15 10" VerticalAlignment="Center" Height="36">
-                            <TextBox.Template>
-                                <ControlTemplate TargetType="TextBoxBase">
-                                    <Border x:Name="border" CornerRadius="20" Background="{TemplateBinding Background}" SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="#e0e6ed">
-                                        <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
-                                    </Border>
-                                    <ControlTemplate.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="BorderBrush" Value="#d9d9d9" TargetName="border"/>
-                                        </Trigger>
-                                        
-                                        <Trigger Property="IsKeyboardFocused" Value="True">
-                                            <Setter Property="BorderBrush" Value="#d9d9d9" TargetName="border"/>
-                                        </Trigger>
-                                    </ControlTemplate.Triggers>
-                                </ControlTemplate>
-                            </TextBox.Template>
-                        </TextBox>
-                        <materialDesign:PackIcon Kind="Magnify" Width="15" Height="15" VerticalAlignment="Center" 
-                                                 Margin="0 0 15 0" Foreground="#b0b9c6" HorizontalAlignment="Right"/>
-                        
-                    </Grid>
-                    
-                    <!--Top Buttons-->
-                    <Button Background="Transparent" HorizontalAlignment="Right" Margin="0 0 20 0">
-                        <materialDesign:PackIcon Kind="Cog" Height="15" Width="15" Background="Transparent" Foreground="#623ed0"></materialDesign:PackIcon>
-                    </Button>
-                    <Button Background="Transparent" HorizontalAlignment="Right" Margin="0 0 90 0">
-                        <materialDesign:PackIcon Kind="Bell" Height="15" Width="15" Background="Transparent" Foreground="#623ed0"></materialDesign:PackIcon>
-                    </Button>
-                    
-                    <!--Page Title-->
-                    <TextBlock Text="Members" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0 20 0 0"
-                               HorizontalAlignment="Left" Foreground="#121518">
-                    </TextBlock>
-                    
-                    <!--Add button-->
-                    <Button
-                        Height="35"
-                        Width="150"
-                        HorizontalAlignment="Right"
-                        Margin="0 20 0 0"
-                        FontSize="13"
-                        Background="#6741d9"
-                        Foreground="#ffffff"
-                        FocusVisualStyle="{x:Null}"
-                        Grid.Row="1">
-                        <Button.Style>
-                            <Style TargetType="Button">
-                                <Setter Property="Background" Value="#6741d9"/>
-                                <Setter Property="Foreground" Value="#ffffff"/>
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="Button">
-                                            <Border Background="{TemplateBinding Background}" CornerRadius="7">
-                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                            </Border>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                                <!-- Aquí van los triggers -->
-                                <Style.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#7b5cd6"/>
-                                        <Setter Property="Foreground" Value="#ffffff"/>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Button.Style>
-
-                        <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="Plus" Width="11" Height="11" VerticalAlignment="Center" Margin="0 1 8 0" Foreground="#ffffff"/>
-                            <TextBlock Text="Agregar nuevo..." FontSize="14" Foreground="#ffffff" VerticalAlignment="Stretch"/>
-
-                        </StackPanel>
-                    </Button>
-                    <!-- Separator -->
-                    <Separator Height="1" Margin="0 -1 0 10" Background="#dae2ea" Grid.Row="3"/> 
-                    
-                    <!-- Tab Buttons -->
-                    <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0 10 0 0">
-                        <Button  
-                             Content="Club Staff"
-                             Background="Transparent"
-                             Foreground="#121518"
-                             FocusVisualStyle="{x:Null}"   
-                             Width="70"
-                             Height="45"
-                             BorderBrush="Transparent"
-                             FontSize="14"
-                             FontWeight="SemiBold">
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="#6741d9"/>
-                                    <Setter Property="Foreground" Value="#ffffff"/>
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="Button">
-                                                <Border Background="{TemplateBinding Background}" BorderThickness="0 0 0 1" BorderBrush="{TemplateBinding BorderBrush}">
-                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                </Border>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                    <!-- Aquí van los triggers -->
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="BorderBrush" Value="#784ff2"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-
-                        </Button>
-                        <Button  
-                             Content="Players"
-                             Background="Transparent"
-                             Foreground="#121518"
-                             FocusVisualStyle="{x:Null}"   
-                             Width="70"
-                             Height="45"
-                             BorderBrush="Transparent"
-                             FontSize="14"
-                             FontWeight="SemiBold">
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="#6741d9"/>
-                                    <Setter Property="Foreground" Value="#ffffff"/>
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="Button">
-                                                <Border Background="{TemplateBinding Background}" BorderThickness="0 0 0 1" BorderBrush="{TemplateBinding BorderBrush}">
-                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                </Border>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                    <!-- Aquí van los triggers -->
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="BorderBrush" Value="#784ff2"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-
-                        </Button>
-                        <Button  
-                         Content="Archived"
-                         Background="Transparent"
-                         Foreground="#121518"
-                         FocusVisualStyle="{x:Null}"   
-                         Width="70"
-                         Height="45"
-                         BorderBrush="Transparent"
-                         FontSize="14"
-                         FontWeight="SemiBold">
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="#6741d9"/>
-                                    <Setter Property="Foreground" Value="#ffffff"/>
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="Button">
-                                                <Border Background="{TemplateBinding Background}" BorderThickness="0 0 0 1" BorderBrush="{TemplateBinding BorderBrush}">
-                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                </Border>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                    <!-- Aquí van los triggers -->
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="BorderBrush" Value="#784ff2"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-
-                        </Button>
-
-                    </StackPanel>
-                    
-                    <!--Counter Title-->
-                    <TextBlock Text="68 club staff" Grid.Row="4" FontSize="18" FontWeight="SemiBold" Foreground="#121518" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                    <TextBlock Text="Filtrar por:" Grid.Row="4" FontSize="13" FontWeight="SemiBold" Foreground="#121518" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 215 0"></TextBlock>
-                    
-                    <!--Filtrar Textbox-->
-                    <Grid Width="200" Grid.Row="4" HorizontalAlignment="Right">
-                        <TextBlock Margin="15 0" VerticalAlignment="Center" Foreground="#b0b9c6" IsHitTestVisible="False"
-               Panel.ZIndex="1" Text="Buscar entre miembros..." Padding="15 10" Visibility="{Binding ElementName=txtSearch, Path=Text.IsEmpty,Converter={StaticResource BoolToVis}}"></TextBlock>
-
-                        <TextBox x:Name="txtFiltrar" Padding="10 7" Background="#ffffff" Foreground="#b0b9c6" BorderThickness="0" FontSize="15"  VerticalAlignment="Center" Height="36">
-                            <TextBox.Template>
-                                <ControlTemplate TargetType="TextBoxBase">
-                                    <Border x:Name="border" CornerRadius="7" Background="{TemplateBinding Background}" SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="#e0e6ed">
-                                        <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
-                                    </Border>
-                                    <ControlTemplate.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="BorderBrush" Value="#d9d9d9" TargetName="border"/>
-                                        </Trigger>
-
-                                        <Trigger Property="IsKeyboardFocused" Value="True">
-                                            <Setter Property="BorderBrush" Value="#d9d9d9" TargetName="border"/>
-                                        </Trigger>
-                                    </ControlTemplate.Triggers>
-                                </ControlTemplate>
-                            </TextBox.Template>
-                        </TextBox>
-
-                    </Grid>
-                    
-                    <!--Datagrid-->
-                    <DataGrid x:Name="membersDataGrid"
-                              Grid.Row="5"
-                              AutoGenerateColumns="False"
-                              Style="{DynamicResource DataGridStyle1}"
-                              CellStyle="{DynamicResource DataGridCellStyle1}"
-                              ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}"
-                              RowStyle="{DynamicResource DataGridRowStyle1}">
-                        <DataGrid.Columns>
-                            <!-- Checkbox inicial -->
-                            <DataGridCheckBoxColumn Width="Auto" CanUserResize="False">
-                                <DataGridCheckBoxColumn.HeaderTemplate>
-                                    <DataTemplate>
-                                        <CheckBox />
-                                    </DataTemplate>
-                                </DataGridCheckBoxColumn.HeaderTemplate>
-                            </DataGridCheckBoxColumn>
-
-                            <!-- Columnas desde la base de datos -->
-                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True" Width="Auto" />
-                            <DataGridTextColumn Header="Username" Binding="{Binding Username}" IsReadOnly="True" Width="*" />
-                            <DataGridTextColumn Header="Password" Binding="{Binding Password}" IsReadOnly="True" Width="*" />
-                            <DataGridCheckBoxColumn Header="Status" Binding="{Binding Status}" IsReadOnly="True" Width="Auto" />
-                            <DataGridTextColumn Header="Role" Binding="{Binding Role}" IsReadOnly="True" Width="*" />
-
-                            <!-- Columna de operaciones -->
-                            <DataGridTemplateColumn Header="Operations" IsReadOnly="True" Width="Auto">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                            <!-- Botón Editar -->
-                                            <Button Margin="2">
-                                                <Button.Style>
-                                                    <Style TargetType="Button">
-                                                        <Setter Property="Background" Value="#512da8"/>
-                                                        <Setter Property="BorderBrush" Value="#4a148c"/>
-                                                        <Setter Property="Foreground" Value="White"/>
-                                                        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-                                                        <Setter Property="Template">
-                                                            <Setter.Value>
-                                                                <ControlTemplate TargetType="Button">
-                                                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="5" Padding="5">
-                                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                                    </Border>
-                                                                </ControlTemplate>
-                                                            </Setter.Value>
-                                                        </Setter>
-                                                        <Style.Triggers>
-                                                            <Trigger Property="IsMouseOver" Value="True">
-                                                                <Setter Property="Background" Value="#673ab7"/>
-                                                            </Trigger>
-                                                        </Style.Triggers>
-                                                    </Style>
-                                                </Button.Style>
-                                                <materialDesign:PackIcon Kind="PencilOutline" Width="12" Height="12" VerticalAlignment="Center"/>
-                                            </Button>
-
-                                            <!-- Botón Eliminar -->
-                                            <Button Margin="2">
-                                                <Button.Style>
-                                                    <Style TargetType="Button">
-                                                        <Setter Property="Background" Value="#d32f2f"/>
-                                                        <Setter Property="BorderBrush" Value="#b71c1c"/>
-                                                        <Setter Property="Foreground" Value="White"/>
-                                                        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-                                                        <Setter Property="Template">
-                                                            <Setter.Value>
-                                                                <ControlTemplate TargetType="Button">
-                                                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="5" Padding="5">
-                                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                                    </Border>
-                                                                </ControlTemplate>
-                                                            </Setter.Value>
-                                                        </Setter>
-                                                        <Style.Triggers>
-                                                            <Trigger Property="IsMouseOver" Value="True">
-                                                                <Setter Property="Background" Value="#f44336"/>
-                                                            </Trigger>
-                                                        </Style.Triggers>
-                                                    </Style>
-                                                </Button.Style>
-                                                <materialDesign:PackIcon Kind="DeleteOutline" Width="12" Height="12" VerticalAlignment="Center"/>
-                                            </Button>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                        </DataGrid.Columns>
-                    </DataGrid>
-                    
                     <!--Pagination-->
-                    <Border Grid.Row="6" HorizontalAlignment="Right" BorderBrush="#dee4ec" BorderThickness="1" CornerRadius="5" Padding="5" Background="White"  Margin="0 10 10 10"  >
+                    <Border Grid.Row="7" HorizontalAlignment="Left" BorderBrush="#dee4ec" BorderThickness="1" CornerRadius="5" Padding="5" Background="White"  Margin="526,10,0,10"  >
                         <StackPanel Orientation="Horizontal">
                             <Button>
                                 <Button.Style>
                                     <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Transparent"/>
-                                    <Setter Property="Foreground" Value="#6c7682"/>
-                                    <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-                                    <Setter Property="FontSize" Value="13"/>
-                                    <Setter Property="Margin" Value="1 0"/>
-                                    <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="Button">
-                                            <Border Background="{TemplateBinding Background}" CornerRadius="5" Padding="10 5">
-                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 1"/>
-                                            </Border>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                    <!-- Aquí van los triggers -->
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#7950f2"/>
-                                            <Setter Property="Foreground" Value="#ffffff"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                                </Button.Style> 
-                                
+                                        <Setter Property="Background" Value="Transparent"/>
+                                        <Setter Property="Foreground" Value="#6c7682"/>
+                                        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                                        <Setter Property="FontSize" Value="13"/>
+                                        <Setter Property="Margin" Value="1 0"/>
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Border Background="{TemplateBinding Background}" CornerRadius="5" Padding="10 5">
+                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 1"/>
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <!-- Aquí van los triggers -->
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#7950f2"/>
+                                                <Setter Property="Foreground" Value="#ffffff"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+
                                 <materialDesign:PackIcon Kind="ChevronLeft" Width="10" Height="10" Foreground="#623ed0" VerticalAlignment="Center"/>
                             </Button>
                             <Rectangle Width="1" Height="20" Fill="#dee4ec" Margin="3 7"/>
@@ -678,17 +359,14 @@
                             </Button>
                         </StackPanel>
                     </Border>
-                    
-                    
 
-                </Grid>
-                    
+
             </Grid>
-                
+
         </Border>
 
     </Grid>
 
-   
+
 
 </Window>

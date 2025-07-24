@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\Usuario\source\repos\HotelManagementSystem\HotelManagementSystem\App.xaml
-2865469925
+8-652113924
 11413424753
-131175277056
+261706483239
 238-1439091236
-Views\Dashboard.xaml;Views\MainWindow.xaml;
+Views\AgregarHabitacion.xaml;Views\Clientes.xaml;Views\Dashboard.xaml;Views\Empleados.xaml;Views\Habitaciones.xaml;Views\MainWindow.xaml;Views\Reservas.xaml;Views\Salidas.xaml;
 
 False
 

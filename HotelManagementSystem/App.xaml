@@ -3,31 +3,43 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:HotelManagementSystem"
-    xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters;assembly=MaterialDesignThemes.Wpf"
-    xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
-    xmlns:internal="clr-namespace:MaterialDesignThemes.Wpf.Internal;assembly=MaterialDesignThemes.Wpf"
-    xmlns:behaviors="clr-namespace:MaterialDesignThemes.Wpf.Behaviors;assembly=MaterialDesignThemes.Wpf">
+            xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters;assembly=MaterialDesignThemes.Wpf"
+            xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+            xmlns:internal="clr-namespace:MaterialDesignThemes.Wpf.Internal;assembly=MaterialDesignThemes.Wpf"
+            xmlns:behaviors="clr-namespace:MaterialDesignThemes.Wpf.Behaviors;assembly=MaterialDesignThemes.Wpf"
+            xmlns:myConverters="clr-namespace:HotelManagementSystem.Converters">
     <Application.Resources>
+        
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="DeepPurple" SecondaryColor="Lime" />
 
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml" />
+
             </ResourceDictionary.MergedDictionaries>
 
-            <Style x:Key="btnLateral" TargetType="{x:Type Button}">
+
+            <Style x:Key="btnLateral" TargetType="Button">
                 <Setter Property="Background" Value="Transparent"/>
                 <Setter Property="Foreground" Value="#d0c0ff"/>
+                <Setter Property="BorderThickness" Value="2"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="Button">
-                            <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="7">
-                                <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <Border x:Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="7">
+                                <ContentPresenter x:Name="contentPresenter"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="Center"
+                                      RecognizesAccessKey="True"/>
                             </Border>
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter  Property="Background" Value="#d0c0ff"/>
-                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter TargetName="border" Property="BorderBrush" Value="#d0c0ff"/>
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
@@ -59,7 +71,7 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-            
+
             <Style x:Key="DataGridStyle1" TargetType="{x:Type DataGrid}">
                 <Setter Property="Background" Value="Transparent"/>
                 <Setter Property="Foreground" Value="#222528"/>
@@ -91,6 +103,7 @@
                     </MultiTrigger>
                 </Style.Triggers>
             </Style>
+
 
             <!-- Estilo para encabezado de columna -->
             <Style x:Key="DataGridColumnHeaderStyle1" TargetType="DataGridColumnHeader">
@@ -126,9 +139,21 @@
                 <Setter Property="BorderThickness" Value="0"/>
                 <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
             </Style>
+            <ControlTemplate x:Key="ComboBoxToggleButton" TargetType="ToggleButton">
+                <Grid>
+                    <Path x:Name="Arrow"
+              VerticalAlignment="Center"
+              HorizontalAlignment="Center"
+              Data="M 0 0 L 4 4 L 8 0 Z"
+              Fill="Gray"
+              Width="10"
+              Height="6" />
+                </Grid>
+            </ControlTemplate>
 
         </ResourceDictionary>
-        
+
 
     </Application.Resources>
+    
 </Application>
