@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|c:\\users\\usuario\\source\\repos\\hotelmanagementsystem\\hotelmanagementsystem\\views\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|solutionrelative:hotelmanagementsystem\\views\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|c:\\users\\usuario\\source\\repos\\hotelmanagementsystem\\hotelmanagementsystem\\views\\habitaciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|solutionrelative:hotelmanagementsystem\\views\\habitaciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|c:\\users\\usuario\\source\\repos\\hotelmanagementsystem\\hotelmanagementsystem\\views\\agregarhabitacion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|solutionrelative:hotelmanagementsystem\\views\\agregarhabitacion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|c:\\users\\usuario\\source\\repos\\hotelmanagementsystem\\hotelmanagementsystem\\views\\habitaciones.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|solutionrelative:hotelmanagementsystem\\views\\habitaciones.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|c:\\users\\usuario\\source\\repos\\hotelmanagementsystem\\hotelmanagementsystem\\viewmodels\\habitacionesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|solutionrelative:hotelmanagementsystem\\viewmodels\\habitacionesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|c:\\users\\usuario\\source\\repos\\hotelmanagementsystem\\hotelmanagementsystem\\models\\dboroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|solutionrelative:hotelmanagementsystem\\models\\dboroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|c:\\users\\usuario\\source\\repos\\hotelmanagementsystem\\hotelmanagementsystem\\views\\agregarhabitacion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|solutionrelative:hotelmanagementsystem\\views\\agregarhabitacion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|c:\\users\\usuario\\source\\repos\\hotelmanagementsystem\\hotelmanagementsystem\\views\\habitaciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|solutionrelative:hotelmanagementsystem\\views\\habitaciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|c:\\users\\usuario\\source\\repos\\hotelmanagementsystem\\hotelmanagementsystem\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|solutionrelative:hotelmanagementsystem\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|c:\\users\\usuario\\source\\repos\\hotelmanagementsystem\\hotelmanagementsystem\\dataaccesslayer\\logindal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BC4798B-09E4-48EC-8C02-34E9B24FCE48}|HotelManagementSystem\\HotelManagementSystem.csproj|solutionrelative:hotelmanagementsystem\\dataaccesslayer\\logindal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,25 +47,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Dashboard.xaml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Views\\Dashboard.xaml",
-              "RelativeDocumentMoniker": "HotelManagementSystem\\Views\\Dashboard.xaml",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Views\\Dashboard.xaml",
-              "RelativeToolTip": "HotelManagementSystem\\Views\\Dashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-24T21:18:30.443Z",
+              "Title": "Habitaciones.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Views\\Habitaciones.xaml.cs",
+              "RelativeDocumentMoniker": "HotelManagementSystem\\Views\\Habitaciones.xaml.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Views\\Habitaciones.xaml.cs",
+              "RelativeToolTip": "HotelManagementSystem\\Views\\Habitaciones.xaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T01:21:09.445Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Habitaciones.xaml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Views\\Habitaciones.xaml",
-              "RelativeDocumentMoniker": "HotelManagementSystem\\Views\\Habitaciones.xaml",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Views\\Habitaciones.xaml",
-              "RelativeToolTip": "HotelManagementSystem\\Views\\Habitaciones.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-24T21:14:54.693Z"
             },
             {
               "$type": "Document",
@@ -72,31 +66,58 @@
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Views\\AgregarHabitacion.xaml",
               "RelativeToolTip": "HotelManagementSystem\\Views\\AgregarHabitacion.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-24T21:12:40.328Z"
+              "WhenOpened": "2025-08-13T01:10:30.178Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Habitaciones.xaml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Views\\Habitaciones.xaml",
+              "RelativeDocumentMoniker": "HotelManagementSystem\\Views\\Habitaciones.xaml",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Views\\Habitaciones.xaml",
+              "RelativeToolTip": "HotelManagementSystem\\Views\\Habitaciones.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-13T01:10:19.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "HabitacionesViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\ViewModels\\HabitacionesViewModel.cs",
               "RelativeDocumentMoniker": "HotelManagementSystem\\ViewModels\\HabitacionesViewModel.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\ViewModels\\HabitacionesViewModel.cs",
               "RelativeToolTip": "HotelManagementSystem\\ViewModels\\HabitacionesViewModel.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwA0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T21:10:11.1Z"
+              "WhenOpened": "2025-08-13T00:33:30.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\DataAccessLayer\\LoginDAL.cs",
+              "RelativeDocumentMoniker": "HotelManagementSystem\\DataAccessLayer\\LoginDAL.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\DataAccessLayer\\LoginDAL.cs",
+              "RelativeToolTip": "HotelManagementSystem\\DataAccessLayer\\LoginDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T00:14:12.986Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DboRoom.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Models\\DboRoom.cs",
-              "RelativeDocumentMoniker": "HotelManagementSystem\\Models\\DboRoom.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Models\\DboRoom.cs",
-              "RelativeToolTip": "HotelManagementSystem\\Models\\DboRoom.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "HotelManagementSystem\\Commands\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\HotelManagementSystem\\HotelManagementSystem\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "HotelManagementSystem\\Commands\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T20:46:15.852Z"
+              "WhenOpened": "2025-08-13T00:09:46.342Z",
+              "EditorCaption": ""
             }
           ]
         }
